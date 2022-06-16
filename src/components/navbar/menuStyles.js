@@ -8,7 +8,7 @@ export default {
       top: "30px"
     },
     bmBurgerBars: {
-      background: "#373a47"
+      background: "white"
     },
     bmBurgerBarsHover: {
       background: "#a90000"
@@ -18,7 +18,7 @@ export default {
       width: "24px"
     },
     bmCross: {
-      background: "#bdc3c7",
+      background: "teal",
       position: "absolute",
       right: "10px"
 
@@ -30,15 +30,16 @@ export default {
       top: "0px",
     },
     bmMenu: {
-      background: "gray",
+      background: "white",
       padding: "2.5em 1.5em 0",
-      fontSize: "1.15em"
+      fontSize: "1.15em",
+      // height: "fit-content"
     },
     bmMorphShape: {
       fill: "#373a47"
     },
     bmItemList: {
-      color: "#b8b7ad",
+      color: "teal",
       padding: "0.8em"
     },
     bmItem: {
