@@ -316,3 +316,13 @@ section {
     }
     
 }
+@media (min-width: 345px)  and (max-width: 375px){
+    .filter_service_input input {
+        width: 100px;
+    }
+    .filter_select {
+        width: 100px;
+        font-size: 12px;
+    }
+    
+}

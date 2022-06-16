@@ -3,11 +3,28 @@ import CompanyServices from "../components/services/CompanyServices";
 import { ServiceItems } from "../components/services/ServiceItems";
 import { AiOutlineSearch } from "react-icons/ai";
 import { AiOutlineCloseCircle } from "react-icons/ai";
+import { BsFillArrowUpCircleFill } from "react-icons/bs";
 
 function Services() {
   const [filteredServices, setFilteredServices] = useState(null);
   const [error, setError] = useState("");
   const [searchItem, setSearchItem] = useState("");
+  const [scroll, setScroll] = useState(false);
+
+  window.onscroll = (e) => {
+    console.log(document.documentElement.scrollTop);
+    if (document.documentElement.scrollTop > 100) {
+      setScroll(true);
+    } else {
+      setScroll(false);
+    }
+  };
+
+  const handleScroll = () => {
+    document
+      .getElementsByTagName("html")[0]
+      .scrollIntoView({ behavior: "smooth" });
+  };
 
   useEffect(() => {
     setFilteredServices(ServiceItems);
@@ -49,6 +66,9 @@ function Services() {
 
   return (
     <Fragment>
+      {scroll && (
+        <BsFillArrowUpCircleFill onClick={handleScroll} className="scroll" />
+      )}
       <section className="services">
         <h1 className="heading" style={{ marginTop: "7rem" }}>
           our <span>services</span>
