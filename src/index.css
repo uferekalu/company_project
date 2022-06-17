@@ -359,9 +359,67 @@ section {
   background: var(--black);
 }
 .custom_email {
-    text-transform: lowercase;
+  text-transform: lowercase;
 }
 /* end of contact us */
+
+/* Start of Footer */
+.footer {
+  margin-top: 1rem;
+  background: teal;
+  padding-bottom: 9rem;
+}
+.footer .box_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+  gap: 1.5rem;
+}
+.footer p {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.footer .box_container .box h3 {
+  font-size: 2.5rem;
+  padding: 1rem 0;
+  color: black;
+  text-align: center;
+}
+.footer .box_container .box a {
+  display: block;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  color: white;
+  text-align: center;
+}
+.footer .box_container .box a i {
+  padding-right: 0.5rem;
+  color: yellowgreen;
+}
+.footer .box_container .box a:hover i {
+  padding-right: 2rem;
+}
+
+.footer_copyright {
+  background-color: #25262e;
+}
+.footer_menu {
+  float: left;
+  padding-bottom: 10px;
+}
+.footer_menu a {
+  color: #cfd2d6;
+  padding: 6px;
+  text-decoration: none;
+}
+.footer_menu a:hover {
+  color: #27bcda;
+}
+.footer_copyright p {
+  font-size: 0.9em;
+  text-align: right;
+  color: white;
+}
 
 @media (max-width: 600px) {
   .filter_service_input input {

@@ -10,6 +10,7 @@ import Navbar from "./components/navbar/Navbar";
 import Homepage from "./pages/homepage";
 import Services from "./pages/services";
 import ContactUs from "./pages/contactUs";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<ContactUs />} />
         </Routes>
+        <Footer />
       </Router>
     </Fragment>
   );

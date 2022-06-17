@@ -28,3 +28,8 @@
         font-size: 2rem;
     }
 }
+@media (min-width: 345px) and (max-width: 375px) {
+  .header {
+    padding: 2rem 5%;
+  }
+}
